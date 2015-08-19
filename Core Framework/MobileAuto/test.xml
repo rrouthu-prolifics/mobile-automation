@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name="MobileAuto_Project" thread-count="1">
+      <parameter name="env" value="false"></parameter>
+      
+      <test name="com.test">
+        <classes>
+          <class name="scripts.com.test.TestClass"/>
+		 </classes>
+      </test>
+</suite>
