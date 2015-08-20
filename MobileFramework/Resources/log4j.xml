@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<appender name="CA" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value=" %d [%t] %-5p %c %x - %m%n" />
+		</layout>
+	</appender>
+	<appender name="dailyFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="logs/myVMWareApp.log" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%t] %d{HH:mm:ss,SSS} %-5p %l - %m%n" />
+		</layout>
+	</appender>
+	<appender name="RollingFileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="logs/myVMWareApp.log" />
+        <param name="MaxFileSize" value="10000KB" />
+        <param name="MaxBackupIndex" value="10" />
+        <param name="append" value="true" />        
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%t] %d{dd-MM-yyyy HH:mm:ss} %-5p%c{1} - %m%n" />
+        </layout>
+    </appender>
+	<appender name="FA" class="org.apache.log4j.FileAppender">
+		<param name="File" value="logs/VMWare.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%t] %d [%t] %-5p %c %x - %m%n" />
+		</layout>
+	</appender>
+	
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="CA" />		s
+		<appender-ref ref="RollingFileAppender" />
+	</root>
+</log4j:configuration>

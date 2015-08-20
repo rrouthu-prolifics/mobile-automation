@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6766" started-at="2015-08-13T13:51:10Z" finished-at="2015-08-13T13:51:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6766" started-at="2015-08-13T13:51:10Z" finished-at="2015-08-13T13:51:17Z">
+      <class name="scripts.com.test.TestClass">
+        <test-method status="PASS" signature="setUp(boolean)[pri:0, instance:scripts.com.test.TestClass@c9046b1]" name="setUp" is-config="true" duration-ms="11748" started-at="2015-08-13T19:20:59Z" finished-at="2015-08-13T19:21:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="doSauceAction()[pri:0, instance:scripts.com.test.TestClass@c9046b1]" name="doSauceAction" duration-ms="5727" started-at="2015-08-13T19:21:10Z" finished-at="2015-08-13T19:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doSauceAction -->
+        <test-method status="PASS" signature="oneTearDown()[pri:0, instance:scripts.com.test.TestClass@c9046b1]" name="oneTearDown" is-config="true" duration-ms="1030" started-at="2015-08-13T19:21:16Z" finished-at="2015-08-13T19:21:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneTearDown -->
+      </class> <!-- scripts.com.test.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
